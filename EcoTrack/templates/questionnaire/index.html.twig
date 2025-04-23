@@ -8,13 +8,18 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="questionnaire-container">
+    <div class="question-block">
+        <h2>Quel est votre mode de transport principal pour venir au travail ?</h2>
+        <button>A pied ! 😅</button><br><br>
+        <button>A vélo ! 😊</button><br><br>
+        <button>En transport en commun ! 🚌</button><br><br>
+        <button>En voiture... 🥱</button>
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/Dylan/Desktop/EcoTrack/Projet_Solution_APP/EcoTrack/src/Controller/QuestionnaireController.php</code></li>
-        <li>Your template at <code>C:/Users/Dylan/Desktop/EcoTrack/Projet_Solution_APP/EcoTrack/templates/questionnaire/index.html.twig</code></li>
-    </ul>
+    <div class="image-block">
+        <img src="{{ asset('images/foret.png') }}" alt="Forêt" />
+        {# remplace 'foret.png' par le nom de ton image #}
+    </div>
 </div>
 {% endblock %}
