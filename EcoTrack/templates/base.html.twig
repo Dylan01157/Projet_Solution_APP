@@ -6,6 +6,7 @@
         <title>{% block title %}Barre de Naviagtion{% endblock %}</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="icon" href="/icon.png" type="image/png">
         <style>         
             body {
                 display: flex;
@@ -154,30 +155,44 @@
             justify-content: center;
             font-weight: bold;
             font-size: 1rem;
-            background-color: #e0e0e0;
             position: relative;
-            }
+        }
 
-            .timeline-container {
+        .timeline-container {
             position: relative;
-            /* plus besoin de padding */
-            }
+        }
 
-            .timeline-container::before {
+        .timeline-container::before {
             content: "";
             position: absolute;
             top: 50%;
-            left: 40px; /* largeur d’un demi-cercle */
+            left: 40px;
             right: 40px;
             height: 4px;
             background-color: #d3d3d3;
             z-index: 0;
-            }
+        }
 
-            .z-1 {
+        /* Couleur pour le jour actuel */
+        .bg-warning {
+            background-color: #ffc107 !important; /* Jaune */
+        }
+
+        /* Couleur pour les jours passés */
+        .bg-success-subtle {
+            background-color:rgb(92, 195, 116) !important; /* Vert */
+        }
+
+        /* Couleur pour les jours futurs */
+        .bg-secondary {
+            background-color: #6c757d !important; /* Gris */
+        }
+
+        .z-1 {
             z-index: 1;
             background-clip: padding-box;
-            }
+        }
+
 
 
 
